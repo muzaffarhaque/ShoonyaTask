@@ -123,7 +123,7 @@ export default function Home() {
                   const formattedDate = moment.unix(ele?.date).format("MMMM D, YYYY");
                   return (
                     <div key={i} className="card">
-                      <div className="image-frame">
+                      <div className="image-frame" onClick={()=>navigate(`/details/${ele.id}`)}>
                         <Image src={ele?.image || hero_image} alt="icon" className="card-image" />
                       </div>
                       <div className="card-content">
