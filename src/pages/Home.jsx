@@ -145,14 +145,14 @@ export default function Home() {
 
           <div className="py-3 d-flex gap-3 justify-content-center">
             <button
-              onClick={() => goToPage(currentPage > 1 ? currentPage - 1 : 1)}
+              onClick={() => goToPage(currentPage > 1 ? currentPage - 1 : 4)}
               className="primary-btn"
               disabled={currentPage === 1}
             >
               Previous
             </button>
             <button
-              onClick={() => goToPage(currentPage + 1)}
+              onClick={() => goToPage(currentPage < 4 ?  currentPage + 1 :1)}
               className="primary-btn"
             >
               Next
