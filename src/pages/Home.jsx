@@ -59,6 +59,7 @@ export default function Home() {
 
   function handleTypeChange(type) {
     setSelectedDate('');
+    setCurrentPage(1)
     setSelectedType(type);
   }
 
